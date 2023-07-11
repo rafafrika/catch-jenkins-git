@@ -17,7 +17,6 @@ pipeline {
                     // Executar o Jenkinsfile do segundo repositório
                     script {
                         def secondJenkinsfile = load '../Jenkinsfile'
-                        secondJenkinsfile.execute()
                     }
                 }
                 echo 'Hello World! 3'

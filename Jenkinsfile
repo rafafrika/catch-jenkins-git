@@ -6,7 +6,7 @@ pipeline {
             steps {
                 // Clonar o segundo repositório
                 echo 'Hello World!'
-                git url: 'https://github.com/rafafrika/verademo-dotnet.git'
+                git branch: 'main', credentialsId: 'github-ssh', url: 'git@github.com:rafafrika/verademo-dotnet.git'
             }
         }
         

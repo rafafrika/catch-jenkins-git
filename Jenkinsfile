@@ -16,7 +16,7 @@ pipeline {
                 dir('verademo-dotnet') {
                     // Executar o Jenkinsfile do segundo repositório
                     script {
-                        def secondJenkinsfile = load './Jenkinsfile'
+                        def secondJenkinsfile = load '../Jenkinsfile'
                         secondJenkinsfile.execute()
                     }
                 }
